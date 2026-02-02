@@ -1,0 +1,78 @@
+.justify{text-align: justify; }
+.plaatjerechts{padding-left:15px; padding-top:10px; }
+.plaatjelinks{padding-right:15px; padding-bottom:10px; }
+.actueel{margin-left:10px; }
+a{text-decoration:none; }
+ 
+* { box-sizing: border-box; }
+body{font-size:95%; }
+body.achtergrond{ background:fixed ; background-image:url('plaatjes/achtergronden/luchtbellen.jpg'); background-size:cover; }
+.row:after {    content: "";    clear: both;    display: block;}
+[class*="col-"] {    float: left;    padding: 5px 0 0 0; margin-top:10px; }
+html { font-family: "tahoma", sans-serif; }
+#menu a {display: block;  color:#000;  text-decoration: none;  padding: 2px;  font-weight: bold; }
+#menu a:hover {	background: #2CA1FA; color: #FFFFEC; }
+#menu ul {background-color:#FFFFEC; list-style-type:none ;  padding: 0; margin:5px 0 0 0; font-size:80%; font-weight:bold; border:1px solid #0061AE; border-radius:5px; }
+#menu li {display:inline-block; padding: 4px 10px 4px 10px; border-right:1px solid #F00; }
+#menu li:hover { background-color: #2CA1FA;  }
+#balkaside{height:5px; }
+h1 {  color: white;  text-shadow: 2px 2px 1px #000; }
+img.zwartwit {filter:grayscale(100%); -webkit-filter:grayscale(100%); -moz-filter:grayscale(100%); -o-filter:grayscale(100%); transition:5s;
+		 -webkit-transition:5s; -moz-transition:5s; -o-transition:5s; padding-right:15px; padding-bottom:10px; }
+img.zwartwit:hover {filter:grayscale(0%); -webkit-filter:grayscale(0%); -moz-filter:grayscale(0%); -o-filter:grayscale(0%); }
+a{font-size:90%; }
+a:hover{color:#00F; }
+a{color:#000; }
+a:visited{color:000; }
+a:active{color:F00; }
+.container {max-width: 1000px; margin: 5px auto; }
+.header {background:rgba(144,201,244,0.3) ; border:1px solid #00F; border-radius:5px; padding-left: 100px; margin:0 0 0 0px; color:#FFF; text-shadow: 5px 5px 1px #000; 
+		font-size:60px; font-weight:bold; font-family:"comic sans ms"; }
+.footer {background:rgba(110,177,229,0.5) ; padding: 2px 0 2px 10px; margin-top:5px; border:1px solid #0061AE; border-radius:5px; font-size:70%; color:#808080; }
+.footer:hover{color:#FFF; } 
+.col-9 {background:rgba(255,255,236,0.5) url(plaatjes/#.jpg); border:1px solid #0061AE; border-radius:5px; margin-top:5px; }
+.aside {background:rgba(255,255,236,0.7);  padding:10px ; margin-top:-11px; margin-left:5px; text-align: left; font-size: 80%; border:1px solid #0061AE; border-radius:5px; }
+blockquote{margin:10px; }
+blockquote.wit{margin:10px; background:rgba(255,255,255,0.1) ; padding:20px; border-radius:25px;  }
+img{border-radius:15px; }
+.img{width:50%;  display: block; margin-left: auto;   margin-right: auto; }
+.rauwendirect{font-style:italic; color:#FFF; }
+.tekstaside{color:#000; font-size:100%; text-align: justify; }
+table,td {border:1px solid transparent; border-spacing:0px; }
+/* For desktop: */
+.col-3 {width: 25%;}
+.col-9 {width: 75%;}
+
+
+@media only screen and (max-width: 900px) {
+  	.gedicht{font-size:70%; }
+	}
+
+@media only screen and (max-width: 700px) {
+    /* For mobile phones: */
+    [class*="col-"] {  width: 100%;  }
+      body{padding:0px ; }
+    #menu li { display:block;  padding: 2px;    margin-bottom: 2px; border:2px solid:#F00; border-bottom:1px solid #DDF; border-right:0px; }
+	#menu ul {margin-right:0px; text-align:center; margin-bottom:-5px; }
+	#balkaside{height:0px; }
+	.aside {   padding:2px ; margin-left:0px; }
+	.footer { padding:0px ; border:0px; font-size:0px; padding:0px; }
+	.header{font-size:24px; padding-left: 20px; }
+  	.img{width:50%; }
+  	.container{margin:-7px; }
+  	.tekstaside{color:#000; font-size:100%; }
+  	html { font-size:100%;  }
+  	}
+
+@media only screen and (max-width: 480px) { 
+   body{padding:0; }
+	#menu li { padding: 2px;    margin-bottom: 1px; }
+	#menu ul {margin-top:-0px; margin-bottom:-10px; margin-right:0px; }
+	.aside {padding:2px ;  font-size: 12px; margin-top:-15px; }
+	.img{width:80%; }
+	.header{font-size:16px; padding-left: 10px; }
+	.tekstaside{color:#000; font-size:100%; }
+  	iframe{height:495px; }
+  	html { font-size:67%;  }
+
+  	}
