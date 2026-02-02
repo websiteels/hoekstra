@@ -1,0 +1,178 @@
+<!DOCTYPE html >
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="nl">
+<meta charset="UTF-8">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" href="../index.css"; type="text/css">
+<title>Vogelboek</title>
+<meta name="Microsoft Border" content="tlb, default">
+</head>
+<body onload="fotoboek()" leftmargin="0" topmargin="0" >
+
+<div align="left">
+
+<table border="0" width="50%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="3%">
+&nbsp;</td>
+		<td>
+		
+<h1><b>Vogelboek</b></h1><p>Het boekje 'Bijzondere keramische vogeltjes'kan nu via ING rentepunten met korting besteld worden.
+<br>
+Dus geen &#8364 30,- maar &#8364 12.50. exclusief verzendkosten.
+ <br>
+ De vogeltjes kunnen ook los worden verkocht a &#8364 75,00 tot &#8364 150,00 per stuk of meer voor de grotere exemplaren , <br>
+Via de mail geef ik u graag uitleg hierover.
+<script type="text/javascript">
+// dit kun je wijzigen
+	var Beeldbreedte=280;
+	var Beeldhoogte=280;
+	var Rand=true;
+	var Randkleur="silver";
+	var Snelheid=15;
+	var Pauze=2000; // 1 seconde = 1000
+	var Verticaal=0;	
+// hier plaats je de afbeeldingen
+	Afbeeldingen=new Array(
+		"6605.jpg","#",
+		"6606.jpg","#",
+		"6607.jpg","#",
+		"6608.jpg","#",
+		"6609.jpg","#",
+		"6612.jpg","#",
+		"6613.jpg","#",
+		"6615.jpg","#",
+		"6617.jpg","#",
+		"6618.jpg","#",
+		"6619.jpg","#",
+		"6620.jpg","#",
+		"6623.jpg","#",
+		"6625.jpg","#",
+		"6627.jpg","#",
+		"6628.jpg","#",
+		"6629.jpg","#",
+		"6630.jpg","#",
+		"6632.jpg","#",
+		"6633.jpg","#",
+		"6634.jpg","#",
+		"6635.jpg","#",
+		"6636.jpg","#",
+		"6660.jpg","#",
+		"6662.jpg","#",
+		"2648.jpg","#",
+		"2649.jpg","#",
+		"2651.jpg","#",
+		"2662.jpg","#",
+		"2658.jpg","#",
+		"groenefluiter.jpg","#",
+		"kleinepapegaai.jpg","#",
+		"langstaartfluiter.jpg","#",
+		"luisterendoor.jpg","#",
+		"marinefluiter.jpg","#",
+		"ooievaar.jpg","#",
+		"putter.jpg","#",
+		"papegaaiduikermetmakreel.jpg","#",
+		"6670.jpg","#"	 // geen komma na laatste regel!
+	);	
+// Hieronder niets wijzigen
+	var BLI,BMI,BRI,BTI,HOEK=0,AFBC=6,MAXB,RICHTING=1;
+	var B_MSz,HALT=false;AFBV=new Array(Afbeeldingen.length);
+
+	function fotoboek(){
+		if(document.getElementById){
+			for(i=0;i<Afbeeldingen.length;i+=2){
+				AFBV[i]=new Image();AFBV[i].src=Afbeeldingen[i]}
+			BoekDiv=document.getElementById("Boek");
+			BLI=document.createElement("img");BoekDiv.appendChild(BLI);	
+			BRI=document.createElement("img");BoekDiv.appendChild(BRI);
+			BMI=document.createElement("img");BoekDiv.appendChild(BMI);	
+			BLI.style.position=BMI.style.position=BRI.style.position="absolute";
+			BLI.style.zIndex=BRI.style.zIndex=0;BMI.style.zIndex=1;
+			BLI.style.top=(Verticaal?Beeldhoogte+1:0)+"px";
+			BLI.style.left=0+"px";
+			BMI.style.top=0+"px";
+			BMI.style.left=(Verticaal?0:Beeldbreedte+1)+"px";
+			BRI.style.top=0+"px";
+			BRI.style.left=(Verticaal?0:Beeldbreedte+1)+"px";
+			BLI.style.height=Beeldhoogte+"px";
+			BMI.style.height=Beeldhoogte+"px";
+			BRI.style.height=Beeldhoogte+"px";
+			BLI.style.width=Beeldbreedte+"px";
+			BMI.style.width=Beeldbreedte+"px";
+			BRI.style.width=Beeldbreedte+"px";
+			if(Rand){
+				BLI.style.borderStyle=BMI.style.borderStyle=BRI.style.borderStyle="solid";
+				BLI.style.borderWidth=1+"px";
+				BMI.style.borderWidth=1+"px";
+				BRI.style.borderWidth=1+"px";
+				BLI.style.borderColor=BMI.style.borderColor=BRI.style.borderColor=Randkleur}
+			BLI.src=AFBV[0].src;
+			BLI.lnk=Afbeeldingen[1];
+			BMI.src=AFBV[2].src;
+			BMI.lnk=Afbeeldingen[3];
+			BRI.src=AFBV[4].src;
+			BRI.lnk=Afbeeldingen[5];
+			BLI.onclick=BMI.onclick=BRI.onclick=HYPERLINK;
+			BLI.onmouseover=BMI.onmouseover=BRI.onmouseover=STOP;
+			BLI.onmouseout=BMI.onmouseout=BRI.onmouseout=START;
+			AFBEELDINGEN()}}
+
+	function AFBEELDINGEN(){
+		if(!HALT){
+			if(Verticaal){
+				B_MSz=Math.abs(Math.round(Math.cos(HOEK)*Beeldhoogte));
+				MidOffset=!RICHTING?Beeldhoogte+1:Beeldhoogte-B_MSz;
+				BMI.style.top=MidOffset+"px";
+				BMI.style.height=B_MSz+"px"}
+			else{B_MSz=Math.abs(Math.round(Math.cos(HOEK)*Beeldbreedte));
+				MidOffset=RICHTING?Beeldbreedte+1:Beeldbreedte-B_MSz;
+				BMI.style.left=MidOffset+"px";
+				BMI.style.width=B_MSz+"px"}
+			HOEK+=Snelheid/720*Math.PI;
+			if(HOEK>=Math.PI/2&&RICHTING){
+				RICHTING=0;
+				if(AFBC==Afbeeldingen.length)AFBC=0;
+				BMI.src=AFBV[AFBC].src;
+				BMI.lnk=Afbeeldingen[AFBC+1];
+				AFBC+=2}
+			if(HOEK>=Math.PI){
+				RICHTING=1;
+				BTI=BLI;
+				BLI=BMI;
+				BMI=BTI;
+				if(Verticaal)BMI.style.top=0+"px";
+				else BMI.style.left=Beeldbreedte+1+"px";			
+				BMI.src=BRI.src;
+				BMI.lnk=BRI.lnk;
+
+				setTimeout("PAUZEREN()",Pauze)}
+			else setTimeout("AFBEELDINGEN()",50)}
+		else setTimeout("AFBEELDINGEN()",50)}
+
+	function PAUZEREN(){
+			if(AFBC==Afbeeldingen.length)AFBC=0;
+			BRI.src=AFBV[AFBC].src;
+			BRI.lnk=Afbeeldingen[AFBC+1];
+			BMI.style.zIndex=2;
+			BLI.style.zIndex=1;
+			HOEK=0;
+			AFBC+=2;
+		setTimeout("AFBEELDINGEN()",50)}
+
+	function HYPERLINK(){if(this.lnk)window.location.href=this.lnk}
+	function STOP(){HALT=true;this.style.cursor=this.lnk?"pointer":"default"}
+	function START(){HALT=false}
+</script>
+<br>
+<div id="Boek" style="position: relative; width: 400; height: 438">
+
+</div>
+</td>
+	</tr>
+</table>
+</div>
+</body>
+</html>
